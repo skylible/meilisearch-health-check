@@ -1,0 +1,12 @@
+{
+    "name": "Meilisearch Health Check",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "matklad.rust-analyzer",
+                "serayuzgur.crates"
+            ]
+        }
+    },
+    "dockerFile": "Dockerfile"
+}
