@@ -6,3 +6,16 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+reqwest = { version = "0.12", features = ["json"] }
+tokio = { version = "1", features = ["full"] }
+clap = { version = "~4.4", features = ["derive"] }
+tracing-subscriber = { version = "0.3.15", features = ["env-filter"] }
+serde = { version = "1.0.197", features = ["derive"] }
+serde_json = { version = "1" }
+dotenv = "0.15.0"
+meilisearch-sdk = "0.25.0"
+time = "0.3.34"
+dogstatsd = "0.11.1"
+aws_lambda_events = { version = "0.15.1", default-features = false, features = ["eventbridge"] }
+lambda_runtime = "0.11.3"
+openssl = { version = "0.10.35", features = ["vendored"] }
